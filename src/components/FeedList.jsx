@@ -13,14 +13,19 @@
     // pull the photos out of the context instead of the props
 
 import React from 'react';
-import FeedItem from './FeedItem.jsx'
+import FeedItem from './FeedItem.jsx';
 
-function FeedList() {
-	return (
-		<div className="FeedList">
-			<FeedItem />
-		</div>
-	)
+function FeedList(props) {
+    const {photos} = props;
+    return (
+        <div className="FeedList">
+            {
+                photos.map((photo, i) =>
+                    <FeedItem photo={photo} key={i} />
+                )
+            }
+        </div>
+    );
 };
 
 export default FeedList;

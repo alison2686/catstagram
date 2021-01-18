@@ -38,12 +38,17 @@
 
 
 import React from 'react';
+import Header from './components/Header.jsx';
+import HomePage from './pages/HomePage.jsx';
+import data from './data.json';
 
+const {photos} = data;
 
 function App() {
     return (
-        <div>
-        Hello World!
+        <div className="App">
+        <Header />
+        <HomePage photos={photos}/>
         </div>
     );
 }

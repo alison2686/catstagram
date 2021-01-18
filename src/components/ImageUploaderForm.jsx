@@ -29,9 +29,8 @@ import React from 'react';
 function ImageUploaderForm() {
     return (
         <form className="ImageUploaderForm">
-            <input>
-                <button></button>
-            </input>
+            <input />
+                <button>Submit</button>
         </form>
     )
 };

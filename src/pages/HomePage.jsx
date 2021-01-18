@@ -13,4 +13,18 @@
     // and don't pass it in as props to FeedList
 
 import React from 'react';
-import data from '../data.json';
+import ImageUploaderForm from '../components/ImageUploaderForm.jsx';
+import FeedList from '../components/FeedList.jsx';
+
+
+function HomePage(props) {
+	const {photos} = props;
+	return (
+		<div className="HomePage">
+			<ImageUploaderForm />
+			<FeedList photos={photos} />
+		</div>
+	);
+}
+
+export default HomePage;

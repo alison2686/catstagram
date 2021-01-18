@@ -20,10 +20,15 @@
 
 import React from 'react';
 
-function Likes() {
+function Likes(props) {
+	const {totalLikes} = props;
 	return (
 		<div className="Likes">
-			<span></span>
+			<span>{totalLikes} likes</span>
+			<button>Like</button>
+			
 		</div>
 	)
-}
+};
+
+export default Likes;
