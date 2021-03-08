@@ -7,8 +7,8 @@ function FeedList() {
     return (
         <div className="FeedList">
             {
-                photos.map((photo, i) =>
-                    <FeedItem photo={photo} key={i} />
+                photos.map((photos, i) =>
+                    <FeedItem photo={photos} key={i} />
                 )
             }
         </div>

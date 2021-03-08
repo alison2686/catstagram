@@ -4,7 +4,7 @@ function Header() {
     return (
         <ul className="Header">
             <li className="Logo">
-                Catstagram
+                Recipes
             </li>
             <li>
                 Home

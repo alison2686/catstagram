@@ -17,14 +17,13 @@ import ImageUploaderForm from '../components/ImageUploaderForm.jsx';
 import FeedList from '../components/FeedList.jsx';
 
 
-function HomePage(props) {
-	const {photos} = props;
-	return (
-		<div className="HomePage">
-			<ImageUploaderForm />
-			<FeedList photos={photos} />
-		</div>
-	);
+function HomePage() {
+    return (
+        <div className="HomePage">
+            <ImageUploaderForm />
+            <FeedList />
+        </div>
+    );
 }
 
 export default HomePage;

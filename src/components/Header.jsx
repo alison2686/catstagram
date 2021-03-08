@@ -11,15 +11,22 @@
     // check that your links work!
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 function Header() {
     return (
         <div>
             <ul className="Header">
                 <li className="Logo">Catstagram</li>
-                <li>Home</li>
-                <li>About</li>
-                <li>Profile</li>
+                <li>
+                <Link to ="/">Home</Link>
+                </li>
+                <li>
+                <Link to="/about">About</Link>
+                </li>
+                <li>
+                <Link to="/profile">Profile</Link>
+                </li>
             </ul>
         </div>
     )

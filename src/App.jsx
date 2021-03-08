@@ -37,21 +37,49 @@
 	// set up Route to with paths to each page (hint: HomePage should "/") and with the appropriate component
 
 
-import React from 'react';
-import Header from './components/Header.jsx';
-import HomePage from './pages/HomePage.jsx';
-import data from './data.json';
+import React, { createContext, useState, useEffect } from 'react'
+import Header from './components/Header.jsx'
+import HomePage from './pages/HomePage.jsx'
+import { BrowserRouter, Route } from 'react-router-dom'
+import AboutPage from './pages/AboutPage'
+import ProfilePage from './pages/ProfilePage'
 
-const {photos} = data;
+export const PhotosContext = createContext()
 
 function App() {
+    const [photos, setPhotos] = useState([])
+    const addPhoto = (url) => {
+        setPhotos((prevState) => {
+            const newPhoto = {
+                url: url,
+                likes: 0
+            }
+            return prevState.concat(newPhoto)
+
+        })
+    }
+
+    useEffect(() => {
+        fetch('https://api.jsonbin.io/b/600f8e05bca934583e41c665')
+            .then(response => response.json())
+            .then((data) => {
+                setPhotos(data.photos)
+            })
+    }, [])
+
     return (
-        <div className="App">
-        <Header />
-        <HomePage photos={photos}/>
-        </div>
+        <BrowserRouter>
+            <PhotosContext.Provider value={{photos, addPhoto}} >
+                <div>
+                    <Header />
+                    <Route exact path="/" component={HomePage} />
+                    <Route path="/about" component={AboutPage} />
+                    <Route path="/profile" component={ProfilePage} />
+                </div>
+            </PhotosContext.Provider>
+        </BrowserRouter>
+        
     );
 }
 
 export default App;
-
