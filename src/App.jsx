@@ -38,7 +38,7 @@
 
 
 import React, { createContext, useState, useEffect } from 'react'
-import Header from './components/Header.jsx'
+import Header from './components/Header/Header'
 import HomePage from './pages/HomePage.jsx'
 import { BrowserRouter, Route } from 'react-router-dom'
 import AboutPage from './pages/AboutPage'

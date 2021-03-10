@@ -13,8 +13,8 @@
     // pull the photos out of the context instead of the props
 
 import React, { useContext } from 'react';
-import FeedItem from './FeedItem.jsx';
-import {PhotosContext} from '../App.jsx';
+import FeedItem from '../FeedItem/FeedItem';
+import {PhotosContext} from '../../App';
 
 function FeedList() {
     const {photos} = useContext(PhotosContext)

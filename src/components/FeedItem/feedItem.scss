@@ -1,0 +1,12 @@
+$feedItem-color: #804462;
+
+.FeedItem {
+    background: $feedItem-color;
+    border: 1px solid black;
+    border-radius: 3px;
+    margin-bottom: 15px;
+
+    .Image {
+        width: 100%;
+    }
+} 

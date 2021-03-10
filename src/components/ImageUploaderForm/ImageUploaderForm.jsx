@@ -25,7 +25,7 @@
     // In this component, you will need to pull out addPhoto from context and call it on handleSubmit and pass in the url.
 
 import React, { useContext, useState } from 'react';
-import {PhotosContext} from '../App.jsx';
+import {PhotosContext} from '../../App';
 
 function ImageUploaderForm() {
     const {addPhoto} = useContext(PhotosContext);

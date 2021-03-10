@@ -1,0 +1,26 @@
+.Header {
+    padding: 20px;
+    font-size: 18px;
+    color: white;
+    background-color: #8cf95a;
+    margin-bottom: 50px;
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+
+    a {
+        color: orange;
+    }
+
+    li {
+        padding: 0 12px;
+    }
+
+    .Logo {
+        font-weight: 700;
+        color: black;
+    }
+
+}
+
+
