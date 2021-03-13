@@ -1,0 +1,17 @@
+.Likes {
+    display: flex;
+    flex-flow: row wrap;
+    padding: 20px;
+
+    .LikesButton {
+        text-align: right;
+        background: #d8ae64;
+        border: 1px solid black;
+        color: #ffffff;
+    }
+
+    span {
+        flex: 1;
+    }
+}
+

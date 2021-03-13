@@ -1,0 +1,15 @@
+.ImageUploaderForm {
+    display: flex;
+    padding-bottom: 20px;
+
+    input {
+        flex-grow: 1;
+        padding: 10px;
+    }
+
+    button {
+        background: #d8ae64;
+        border: none;
+        color: white;
+    }
+}

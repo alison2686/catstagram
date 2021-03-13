@@ -26,6 +26,7 @@
 
 import React, { useContext, useState } from 'react';
 import {PhotosContext} from '../../App';
+import './ImageUploaderForm.scss'
 
 function ImageUploaderForm() {
     const {addPhoto} = useContext(PhotosContext);

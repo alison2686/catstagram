@@ -19,6 +19,8 @@
 	 // hint: take the total likes as a prop, and convert it to state
 
 import React, { useState } from 'react';
+import './Likes.scss'
+import Emoji from '../Emojis/Emojis'
 
 function Likes(props) {
 	const {totalLikes} = props;
@@ -40,7 +42,7 @@ function Likes(props) {
 	return (
 		<div className="Likes">
 			<span>{likeCount} likes</span>
-			<button onClick={handleLikeButton}>{ isLiked ? 'Liked' : 'Not Liked (yet)' }</button>
+			<button className="LikesButton" onClick={handleLikeButton}>{ isLiked ? <Emoji symbol="🧡"/> : <Emoji symbol="🤍"/> }</button>
 		</div>
 	)
 };
