@@ -1,13 +1,13 @@
 {
   "main.css": "/catstagram/static/css/main.0010c422.chunk.css",
-  "main.js": "/catstagram/static/js/main.11c0b5fa.chunk.js",
-  "main.js.map": "/catstagram/static/js/main.11c0b5fa.chunk.js.map",
+  "main.js": "/catstagram/static/js/main.8d749a9d.chunk.js",
+  "main.js.map": "/catstagram/static/js/main.8d749a9d.chunk.js.map",
   "runtime~main.js": "/catstagram/static/js/runtime~main.eedb777e.js",
   "runtime~main.js.map": "/catstagram/static/js/runtime~main.eedb777e.js.map",
   "static/js/2.4c800e58.chunk.js": "/catstagram/static/js/2.4c800e58.chunk.js",
   "static/js/2.4c800e58.chunk.js.map": "/catstagram/static/js/2.4c800e58.chunk.js.map",
   "index.html": "/catstagram/index.html",
-  "precache-manifest.8ff74900c7ccff1af786bb740b2c2958.js": "/catstagram/precache-manifest.8ff74900c7ccff1af786bb740b2c2958.js",
+  "precache-manifest.cd3c72db1bb765876b4c2dba6ede3e37.js": "/catstagram/precache-manifest.cd3c72db1bb765876b4c2dba6ede3e37.js",
   "service-worker.js": "/catstagram/service-worker.js",
   "static/css/main.0010c422.chunk.css.map": "/catstagram/static/css/main.0010c422.chunk.css.map"
 }

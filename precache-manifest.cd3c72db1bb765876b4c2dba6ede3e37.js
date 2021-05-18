@@ -1,11 +1,11 @@
 self.__precacheManifest = [
   {
-    "revision": "e4f86c9ee5fd7a2f3b69",
+    "revision": "c9e485e17afa7d31b7c3",
     "url": "/catstagram/static/css/main.0010c422.chunk.css"
   },
   {
-    "revision": "e4f86c9ee5fd7a2f3b69",
-    "url": "/catstagram/static/js/main.11c0b5fa.chunk.js"
+    "revision": "c9e485e17afa7d31b7c3",
+    "url": "/catstagram/static/js/main.8d749a9d.chunk.js"
   },
   {
     "revision": "d4f193b89ec16f89897e",
@@ -16,7 +16,7 @@ self.__precacheManifest = [
     "url": "/catstagram/static/js/2.4c800e58.chunk.js"
   },
   {
-    "revision": "6b2cbaa10a16c0b16ab586b7dce0d5f0",
+    "revision": "c158413e2372aee7b31303b5fbd3bd71",
     "url": "/catstagram/index.html"
   }
 ];
